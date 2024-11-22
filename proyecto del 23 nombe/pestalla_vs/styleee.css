@@ -1,0 +1,296 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('../imagen/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    height: 720px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+/* Contenedor de la barra */
+.barra {
+    position: relative; /* Permite posicionar elementos internamente */
+    
+    margin-top: 70px;
+    margin-left: 9px;
+}
+
+/* Imagen de la barra */
+.barra img {
+
+    width: auto; /* Mantén el tamaño original o ajusta según lo necesites */
+    height: auto;
+    margin-left: 778px;
+}
+
+/* Botón sobre la imagen */
+.login-btn {
+    position: absolute; /* Permite colocarlo sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    right: 10px; /* Ajusta la posición del botón */
+    transform: translateY(-50%); /* Mantiene el centrado vertical perfecto */
+    background-color: #007BFF; /* Color del botón */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.fonn {
+    float: right; /* Mueve la imagen a la derecha */
+    margin-top: -220px; /* Espacio en la parte superior */
+    margin-right: 45px; /* Espacio a la derecha */
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+
+.login-btn {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 8px 16px; /* Tamaño más pequeño */
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    float: right; /* Mueve el botón a la derecha */
+    margin-top: 10px; /* Baja el botón un poco */
+}
+
+
+
+.event-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.event-header {
+    float: left; /* Mueve la imagen a la izquierda */
+    margin-top: -200px; /* Espacio superior */
+    margin-left: 20px; /* Espacio a la izquierda */
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    
+}
+.event-header .logo {
+    width: 90px;
+}
+
+.event-details {
+    margin-top: 200px;
+}
+
+.event-date{ font-size: 24px;
+    font-weight: bold;
+}
+.event-time {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.team {
+    text-align: center;
+}
+
+.image-a{
+    width: 150px; /* Cambia el valor según el tamaño
+     deseado */
+    margin-top: -200px;
+    margin-left: -70px;
+
+}
+.player-image-b{
+    width: 150px; /* Cambia el valor según el tamaño
+     deseado */
+    margin-top: -160px;
+    margin-left: 190px;
+
+}
+.name-d {
+    font-size: 20px;
+    margin-top: -170px;
+    margin-left: 200px;
+}
+.name-e {
+    font-size: 20px;
+    margin-top: 35px;
+    margin-left: -100px;
+}
+
+
+.vs {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -130px;
+    margin-left: 30px;
+    color: #FFD60A;
+   
+}
+
+.location {
+    font-size: 18px;
+    margin-top: -140px;
+}
+.balon {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    margin-top: -0px; /* Espacio superior, puedes ajustarlo si lo necesitas */
+}
+
+.balon img {
+    width: 100px; /* Ajusta el tamaño de la imagen, cambia según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.icons {
+    bottom: 20px;
+    right: 20px;
+    margin-top: -15px;
+    margin-left: 1100px;
+    
+}
+
+.social-icons a {
+    margin: 0 5px;
+    margin-top: -100;
+}
+
+.icons img {
+    width: 30px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .event-date, .event-time {
+        font-size: 20px;
+    }
+
+    .team .player-image {
+        width: 80px;
+    }
+
+    .vs {
+        font-size: 24px;
+        margin: 0 15px;
+    }
+
+    .event-location {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .event-header {
+        flex-direction: column;
+    }
+
+    .event-date, .event-time {
+        font-size: 18px;
+    }
+
+    .team .player-image {
+        width: 70px;
+    }
+
+    .vs {
+        font-size: 20px;
+    }
+
+    .event-location {
+        font-size: 14px;
+    }
+    
+    .login-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .event-header .logo {
+        width: 40px;
+    }
+
+    .event-date, .event-time {
+        font-size: 16px;
+    }
+
+    .team .player-image {
+        width: 50px;
+    }
+
+    .team-name {
+        font-size: 16px;
+    }
+
+    .vs {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    .event-location {
+        font-size: 12px;
+    }
+
+    .social-icons img {
+        width: 25px;
+    }
+}

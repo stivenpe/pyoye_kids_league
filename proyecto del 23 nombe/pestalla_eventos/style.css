@@ -1,0 +1,131 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../imagen/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .event-header {
+   
+    margin-top: 200px; /* Espacio superior */
+    margin-left: -90px; /* Espacio a la izquierda */
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    
+}
+.event-header .logo {
+    width: 100px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  .barra {
+    position: relative; /* Permite posicionar elementos internamente */
+    
+    margin-top: -10px;
+    margin-left: 747px;
+}
+
+
+/* Botón sobre la imagen */
+.login-btn {
+    position: absolute; /* Permite colocarlo sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    right: 10px; /* Ajusta la posición del botón */
+    transform: translateY(-50%); /* Mantiene el centrado vertical perfecto */
+    background-color: #ff6347; /* Color del botón */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+  
+  .logo img {
+    height: 50px;
+  }
+  
+
+  
+  .main-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .main-section h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+  
+  .events-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .event-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #fbc02d;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .event-card h2 {
+    color: #fbc02d;
+  }
+  .section {
+    text-align: center;
+    padding: 30px 20px;
+    
+  }
+  
+  .img {
+    margin: 10px;
+    height: 50px;
+  }
+  
+  
+  
+  .sponsors img {
+    margin: 10px;
+    height: 50px;
+    margin-top: 200px;
+    width: 90px;
+    margin-left: 90px; /* Espacio a la izquierda */
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+  }
+  
+ 
+.icons {
+      bottom: 20px;
+      right: 20px;
+      margin-top: -15px;
+      margin-left: 1100px;
+      
+  }
+  
+  .social-icons a {
+      margin: 0 5px;
+      margin-top: -100;
+  }
+  
+  .icons img {
+      width: 30px;
+  }
+  
